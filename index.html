@@ -10,6 +10,7 @@
       integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Chats | Kakao Clone</title>
   </head>
   <body>
@@ -17,12 +18,13 @@
       <div class="status-bar__column">
         <span class="status-bar__clock">13:54</span>
       </div>
-      <div class="status-bar__column"></div>
-      <i class="far fa-clock"></i>
-      <i class="fas fa-volume-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <span class="status-bar__battery-level">100%</span>
-      <i class="fas fa-battery-three-quarters"></i>
+      <div class="status-bar__column">
+        <i class="far fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
     </div>
     <header class="header">
       <div class="header__header-column">
@@ -44,19 +46,27 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <!-- 2개의 column을 만든다는 의미 -->
-            <div class="chat__column">
-              <!-- g라고 쓰는 이유는 이미지 형식이 모든 곳에서 동일하기 때문에 global 의 g를 의미 -->
-              <img src="avatar_pjh.jpg" alt="" class="chat__avatar g-avatar" />
-              <div class="chat__content">
-                <span class="chat__username">
-                  Lynn
-                </span>
-                <span class="chat__preview">Going Home</span>
+            <div class="chats_chat friend friend--lg">
+              <div class="friend__column">
+                <img
+                  src="avatar_pjh.jpg"
+                  alt=""
+                  class="g-avatar friend__avartar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Lynn
+                  </span>
+                  <span class="friend__bottom-text">
+                    going home
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat_timestamp">Yesterday</span>
+              <div class="friend__column">
+                <div class="friend_now-listening">
+                  <span class="chat__timestamp">March 8</span>
+                </div>
+              </div>
             </div>
           </a>
         </li>
@@ -71,6 +81,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav_list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
