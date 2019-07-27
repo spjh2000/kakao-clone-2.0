@@ -26,6 +26,7 @@
 }
 
 .more .more__title {
+  font-size: 14px;
   opacity: 0.8;
   margin-bottom: 20px;
 }
@@ -42,6 +43,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .suggestion__icon i {
